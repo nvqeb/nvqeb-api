@@ -8,5 +8,6 @@ export function user(user: RDatum<DBUser>): RDatum<types.User> {
         avatar: user("avatar"),
         email: user("email"),
         name: user("name"),
+        course: user("course"),
     }));
 }
