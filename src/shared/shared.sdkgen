@@ -1,0 +1,22 @@
+import "error"
+
+type LatLng {
+    lat: float
+    lng: float
+}
+
+type Image {
+    thumb: SimpleImage
+    ...SimpleImage
+}
+
+type SimpleImage {
+    width: uint
+    height: uint
+    url: string
+}
+
+type File {
+    name: string
+    url: string
+}

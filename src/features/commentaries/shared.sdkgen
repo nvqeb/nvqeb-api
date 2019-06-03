@@ -1,0 +1,26 @@
+import "../users/shared"
+import "../professors/shared"
+import "../schoolClasses/shared"
+
+type Commentary {
+    id: string
+    user: User
+    ...CommentaryDetails
+    schoolClass: SchoolClass?
+    professor: Professor?
+    createdAt: datetime
+}
+
+type CommentaryDetails {
+    text: string
+}
+
+type NewCommentary {
+    ...CommentaryDetails
+    professorId: string?
+    schoolClassId: string?
+}
+
+function createCommentary(commentary: NewCommentary): Commentary
+function getCommentariesForProfessor(professorId: string): Commentary[]
+function getCommentariesForSchoolClass(schoolClassId: string): Commentary[]

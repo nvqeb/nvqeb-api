@@ -1,0 +1,13 @@
+# Package Manager #
+node_modules/
+yarn-error.log
+
+# Build #
+.cache
+out/
+
+# IDE #
+.vscode
+
+# Test #
+src/test.ts

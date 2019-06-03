@@ -1,0 +1,13 @@
+// General
+error NotFound
+error InvalidArgument
+error MissingArgument
+
+// Login
+error WrongLoginOrPassword
+error NotLoggedIn
+error PasswordTooSmall
+
+// Email Errors
+error EmailAlreadyInUse
+error InvalidEmail

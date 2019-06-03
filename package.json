@@ -1,0 +1,40 @@
+{
+    "name": "nvqeb-api",
+    "description": "API NVQEB",
+    "version": "1.0.0",
+    "license": "UNLICENSED",
+    "scripts": {
+        "upgrade-packages": "yarn upgrade && yarn code-check",
+        "code-check": "yarn tslint && yarn tsc",
+        "tslint": "tslint -c tslint.json -p .",
+        "tsc": "tsc -noEmit",
+        "test": "parcel build src/test.ts -d out --no-minify --target=node && node out/test.js"
+    },
+    "dependencies": {
+        "@sendgrid/mail": "^6.3.1",
+        "axios": "^0.18.0",
+        "bcryptjs": "^2.4.3",
+        "child-process-promise": "^2.2.1",
+        "image-size": "^0.6.3",
+        "localized-strings": "^0.2.0",
+        "moment": "^2.17.1",
+        "mz": "^2.7.0",
+        "raven": "^2.4.0",
+        "rethinkdbdash": "^2.3.31",
+        "sharp": "^0.22.1"
+    },
+    "devDependencies": {
+        "@types/bcryptjs": "^2.4.1",
+        "@types/image-size": "^0.0.29",
+        "@types/mz": "^0.0.32",
+        "@types/node": "^8.0.26",
+        "@types/raven": "^2.1.4",
+        "@types/sharp": "^0.22.2",
+        "parcel": "^1.10.3",
+        "parcel-bundler": "^1.10.3",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.14.0",
+        "tslint-immutable": "^4.6.0",
+        "typescript": "^2.9.2"
+    }
+}

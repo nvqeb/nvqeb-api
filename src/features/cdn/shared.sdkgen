@@ -1,0 +1,36 @@
+import "../../shared/shared"
+
+// MARK: Image
+type ImageFormat enum {
+    png
+    jpeg
+}
+
+type Crop {
+    x: uint
+    y: uint
+    width: uint
+    height: uint
+}
+
+type UncertainImage {
+    bytes: bytes?
+    image: Image?
+    crop: Crop?
+}
+
+function uploadImage(image: bytes, format: ImageFormat?, crop: Crop?): Image
+function cropImage(src: string, crop: Crop): Image
+
+// MARK: File
+type UncertainFile {
+    fileData: UploadFile?
+    file: File?
+}
+
+type UploadFile {
+    bytes: bytes
+    name: string
+}
+
+function uploadFile(file: UploadFile): File

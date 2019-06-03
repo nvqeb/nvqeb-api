@@ -1,0 +1,223 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended",
+        "tslint-immutable",
+        "tslint:latest",
+        "tslint-config-prettier"
+    ],
+    "linterOptions": {
+        "exclude": [
+            "src/**/*.d.ts",
+            "node_modules/",
+            "src/test.ts",
+            "src/api.ts",
+            "src/*/api.ts",
+            "src/*/*/api.ts",
+            "src/**/api.ts",
+            "src/*/*/*/api.ts",
+            "src/*/*/*/*/api.ts",
+            "src/*/*/*/*/*/api.ts",
+            "src/client.ts",
+            "src/*/client.ts",
+            "src/*/*/client.ts",
+            "src/**/client.ts",
+            "src/*/*/*/client.ts",
+            "src/*/*/*/*/client.ts",
+            "src/*/*/*/*/*/client.ts"
+        ]
+    },
+    "jsRules": {},
+    "rules": {
+        "align": {
+            "options": [
+                "arguments",
+                "elements",
+                "members",
+                "parameters",
+                "statements"
+            ]
+        },
+        "array-type": {
+            "options": [
+                "array-simple"
+            ]
+        },
+        "arrow-parens": true,
+        "arrow-return-shorthand": false,
+        "ban-types": {
+            "options": [
+                [
+                    "Object",
+                    "Avoid using the `Object` type. Did you mean `object`?"
+                ],
+                [
+                    "Function",
+                    "Avoid using the `Function` type. Prefer a specific function type, like `() => void`."
+                ],
+                [
+                    "Boolean",
+                    "Avoid using the `Boolean` type. Did you mean `boolean`?"
+                ],
+                [
+                    "Number",
+                    "Avoid using the `Number` type. Did you mean `number`?"
+                ],
+                [
+                    "String",
+                    "Avoid using the `String` type. Did you mean `string`?"
+                ],
+                [
+                    "Symbol",
+                    "Avoid using the `Symbol` type. Did you mean `symbol`?"
+                ]
+            ]
+        },
+        "class-name": true,
+        "curly": false,
+        "cyclomatic-complexity": false,
+        "eofline": true,
+        "forin": false,
+        "import-spacing": true,
+        "indent": [
+            true,
+            "spaces",
+            4
+        ],
+        "interface-over-type-literal": true,
+        "jsdoc-format": false,
+        "label-position": false,
+        "max-classes-per-file": false,
+        "max-line-length": false,
+        "member-access": false,
+        "member-ordering": false,
+        "new-parens": true,
+        "no-angle-bracket-type-assertion": true,
+        "no-any": false,
+        "no-arg": false,
+        "no-conditional-assignment": true,
+        "no-consecutive-blank-lines": true,
+        "no-console": false,
+        "no-construct": true,
+        "no-debugger": true,
+        "no-duplicate-super": true,
+        "no-empty": false,
+        "no-empty-interface": false,
+        "no-eval": true,
+        "no-invalid-this": true,
+        "no-shadowed-variable": false,
+        "no-string-literal": false,
+        "no-string-throw": false,
+        "no-switch-case-fall-through": true,
+        "no-trailing-whitespace": true,
+        "no-unnecessary-initializer": false,
+        "no-unsafe-finally": true,
+        "no-unused-expression": true,
+        "no-var-keyword": true,
+        "no-var-requires": false,
+        "object-literal-key-quotes": {
+            "options": [
+                "consistent-as-needed"
+            ]
+        },
+        "object-literal-shorthand": false,
+        "object-literal-sort-keys": false,
+        "one-line": {
+            "options": [
+                "check-catch",
+                "check-else",
+                "check-finally",
+                "check-open-brace",
+                "check-whitespace"
+            ]
+        },
+        "one-variable-per-declaration": {
+            "options": [
+                "ignore-for-loop"
+            ]
+        },
+        "only-arrow-functions": {
+            "options": [
+                "allow-declarations",
+                "allow-named-functions"
+            ]
+        },
+        "ordered-imports": false,
+        "prefer-const": true,
+        "prefer-for-of": true,
+        "quotemark": {
+            "options": [
+                "double",
+                "avoid-escape",
+                "jsx-double"
+            ]
+        },
+        "radix": false,
+        "semicolon": {
+            "options": [
+                "always",
+                "ignore-bound-class-methods"
+            ]
+        },
+        "space-before-function-paren": false,
+        "trailing-comma": {
+            "options": {
+                "multiline": "always",
+                "singleline": "never"
+            }
+        },
+        "triple-equals": true,
+        "typedef-whitespace": true,
+        "unified-signatures": true,
+        "use-isnan": true,
+        "variable-name": {
+            "options": [
+                "ban-keywords",
+                "check-format",
+                "allow-pascal-case",
+                "allow-leading-underscore"
+            ]
+        },
+        "whitespace": {
+            "options": [
+                "check-branch",
+                "check-decl",
+                "check-operator",
+                "check-module",
+                "check-separator",
+                "check-type",
+                "check-typecast"
+            ]
+        },
+        "typedef": {
+            "options": [
+                "call-signature"
+            ]
+        },
+        "readonly-keyword": false,
+        "readonly-array": false,
+        "no-let": false,
+        "no-object-mutation": false,
+        "no-delete": true,
+        "no-this": false,
+        "no-class": false,
+        "no-mixed-interface": true,
+        "interface-name": false,
+        "no-bitwise": false,
+        "no-parameter-reassignment": false,
+        "no-expression-statement": false,
+        "no-loop-statement": false,
+        "no-if-statement": false,
+        "no-method-signature": true,
+        "no-submodule-imports": false,
+        "no-implicit-dependencies": [
+            true,
+            "dev"
+        ],
+        "no-unused-variable": false,
+        "no-unnecessary-callback-wrapper": false,
+        "no-for-in-array": true,
+        "no-return-await": false
+    },
+    "rulesDirectory": []
+}

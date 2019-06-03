@@ -1,0 +1,13 @@
+// GENERATED FILE
+// GENERATED FILE
+// GENERATED FILE
+
+import "../../features/cdn/shared"
+import "../../features/commentaries/shared"
+import "../../features/professors/shared"
+import "../../features/schoolClasses/shared"
+import "../../features/users/shared"
+
+// GENERATED FILE
+// GENERATED FILE
+// GENERATED FILE

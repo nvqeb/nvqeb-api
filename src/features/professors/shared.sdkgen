@@ -1,0 +1,28 @@
+import "../cdn/shared"
+import "../schoolClasses/shared"
+
+type Professor {
+    id: string
+    ...ProfessorDetails
+    schoolClasses: SchoolClass[]
+}
+
+type ProfessorDetails {
+    avatar: Image?
+    name: string
+    tags: string[]
+    hardness: uint
+}
+
+type NewProfessor {
+    ...ProfessorDetails
+    avatar: UncertainImage?
+    schoolClassIds: string[]
+}
+
+get professor(professorId: string): Professor
+get professors(pageOffset: uint): Professor[]
+function createProfessor(professor: NewProfessor): Professor
+function editProfessor(professorId: string, professor: NewProfessor): Professor
+
+get professorsFor(schoolClassId: string): Professor[]

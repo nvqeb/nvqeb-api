@@ -1,0 +1,21 @@
+import "../cdn/shared"
+
+type SchoolClass {
+    ...SchoolClassDetails
+}
+
+type SchoolClassDetails {
+    id: string
+    description: string
+    name: string
+}
+
+type NewSchoolClass {
+    ...SchoolClassDetails
+}
+
+get schoolClass(schoolClassId: string): SchoolClass
+get schoolClassesFor(schoolClassIds: string[]): SchoolClass[]
+
+function createSchoolClass(schoolClass: NewSchoolClass): SchoolClass
+function editSchoolClass(schoolClassId: string, schoolClass: NewSchoolClass): SchoolClass

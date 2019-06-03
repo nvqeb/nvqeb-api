@@ -1,0 +1,33 @@
+import "../cdn/shared"
+
+type User {
+    id: string
+    ...UserDetails
+    avatar: Image?
+}
+
+type NewUser {
+    ...EditUser
+    password: string
+}
+
+type EditUser {
+    ...UserDetails
+    avatar: UncertainImage?
+}
+
+type UserDetails {
+    name: string
+    email: string
+    course: string
+}
+
+function emailAvailable(email: string)
+
+get currentUser(): User
+function login(email: string, password: string !secret): User
+function logout()
+
+function createUser(user: NewUser): User
+function editUser(user: EditUser): User
+function setAvatar(avatar: UncertainImage): User
