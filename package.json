@@ -17,7 +17,7 @@
         "child-process-promise": "^2.2.1",
         "image-size": "^0.6.3",
         "localized-strings": "^0.2.0",
-        "moment": "^2.17.1",
+        "moment": "^2.29.4",
         "mz": "^2.7.0",
         "raven": "^2.4.0",
         "rethinkdbdash": "^2.3.31",
